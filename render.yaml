@@ -1,0 +1,18 @@
+# Render Blueprint — deploy this app as a Node web service.
+# Render dashboard → New → Blueprint → connect the repo containing this file.
+services:
+  - type: web
+    name: jinzi-shabu
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 24.15.0
+      # PIN สำหรับเข้าหลังบ้าน (เปลี่ยนเป็นเลขลับของร้านก่อนใช้จริง)
+      - key: ADMIN_PIN
+        value: "1234"
+      # กุญแจลับเซ็น token หลังบ้าน — ให้ Render สุ่มให้
+      - key: ADMIN_SECRET
+        generateValue: true

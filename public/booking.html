@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>จองโต๊ะ — Jinzi Shabu</title>
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Sarabun:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin:0; background:#2A0A0E; }
+  * { box-sizing: border-box; }
+  ::selection { background:#D6A94C; color:#7a0a16; }
+  @keyframes jzPulse { 0%,100%{ box-shadow:0 0 0 0 rgba(201,149,47,.55);} 50%{ box-shadow:0 0 0 7px rgba(201,149,47,0);} }
+  @keyframes jzFadeUp { from{ opacity:0; transform:translateY(14px);} to{ opacity:1; transform:translateY(0);} }
+  input::placeholder, textarea::placeholder { color:#b89a6a; }
+</style>
+</head>
+<body>
+<div id="app" style="font-family:'Sarabun','Noto Sans SC',sans-serif; color:#2A0A0E; background:#FCF4E6; min-height:100vh;"></div>
+<script type="module" src="js/booking.js"></script>
+</body>
+</html>

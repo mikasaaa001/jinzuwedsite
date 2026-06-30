@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jinzi Shabu — ชาบูบุฟเฟต์ สั่งได้ไม่อั้น</title>
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Sarabun:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin:0; background:#2A0A0E; }
+  * { box-sizing: border-box; }
+  ::selection { background:#D6A94C; color:#7a0a16; }
+  @keyframes jzSway { 0%,100%{ transform:rotate(-5deg);} 50%{ transform:rotate(5deg);} }
+  @keyframes jzGlow { 0%,100%{ box-shadow:0 0 18px rgba(214,169,76,.45);} 50%{ box-shadow:0 0 34px rgba(214,169,76,.85);} }
+  @keyframes jzFloat { 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-8px);} }
+  @keyframes jzPopIn { 0%{ transform:translateY(60px) scale(.92); opacity:0;} 60%{ transform:translateY(-6px) scale(1.01);} 100%{ transform:translateY(0) scale(1); opacity:1;} }
+  @keyframes jzFadeIn { from{ opacity:0;} to{ opacity:1;} }
+  input::placeholder, textarea::placeholder { color:#b89a6a; }
+</style>
+</head>
+<body>
+<div id="app" style="font-family:'Sarabun','Noto Sans SC',sans-serif; color:#2A0A0E; background:#FCF4E6; overflow-x:hidden;"></div>
+<script type="module" src="js/landing.js"></script>
+</body>
+</html>
